@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Sriracha&display=swap');
+::-webkit-scrollbar { display: none; }
+
+:root {
+	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-mono: 'Fira Mono', monospace;
+	--pure-white: #ffffff;
+	--primary-color: #b9c6d2;
+	--secondary-color: #d0dde9;
+	--tertiary-color: #edf0f8;
+	--accent-color: #3d0f00;
+	--heading-color: rgba(0, 0, 0, 0.7);
+	--text-color: #444444;
+	--background-without-opacity: rgba(255, 255, 255, 0.7);
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+}
+
+html, body {
+	color: #333C47;
+
+	background-image: url("background.png");
+
+	scroll-behavior: smooth;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	height: 100%;
+}
+
+#topLayer{
+	position: absolute;
+	left: 0;
+	top: 25%;
+	padding: 0 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.background{
+	background-color: #a9a9a9;
+	opacity: 75%;
+	  width: 100%;
+	height: 8vh;
+	filter: blur(8px); 
+}
+
+.bg-text{
+	position: absolute;
+	z-index: 2;
+}
+
+.logo-font{
+	opacity: 90%;
+	text-shadow: 7px 7px 16px #0F0000;
+	user-select: none;
+	font: 1.75em 'Sriracha', cursive;
+
+	color: #000000;
+	display: inline-block;
+	  vertical-align: middle;
+	  -webkit-transform: perspective(1px) translateZ(0);
+	  transform: perspective(1px) translateZ(0);
+	  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	  -webkit-transition-duration: 0.3s;
+	  transition-duration: 0.3s;
+	  -webkit-transition-property: transform;
+	  transition-property: transform;
+}
+
+.logo-font:hover, .logo-font:focus, .logo-font:active{
+	border: none;
+	text-decoration: none;
+	-webkit-transform: scale(1.1);
+	  transform: scale(1.1);
+	color: #f0f8ff;
+}
+
+h1,
+h2,
+p {
+	color: var(--heading-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color: var(--accent-color);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+pre {
+	font-size: 16px;
+	font-family: var(--font-mono);
+	background-color: rgba(255, 255, 255, 0.45);
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
+	padding: 0.5em;
+	overflow-x: auto;
+	color: var(--text-color);
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
