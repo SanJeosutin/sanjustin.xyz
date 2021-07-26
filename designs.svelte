@@ -13,7 +13,7 @@
 	<div class="container">
 		<div class="card">
 			<div class="card-header">
-				<h1 class="display-5">Project Portfolio</h1>
+				<h1 class="display-5">Design Portfolio</h1>
 			</div>
 			<div class="card-body">
 				<div class="lead">
