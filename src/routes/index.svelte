@@ -29,8 +29,8 @@
 
 <style>
 	.title{
-		opacity: 90%;
-		text-shadow: 7px 7px 16px #0F0000;
+		color: var(--font-secondary-color);
+		text-shadow: 7px 7px 16px var(--shadow-color);
 		font: 8vw 'Sriracha', cursive;
     	user-select: none;
 	}
@@ -40,7 +40,7 @@
 	}
 
 	:global(.text-font a){
-		color: #6c757d;
+		color: var(--font-primary-color);
 		display: inline-block;
   		vertical-align: middle;
   		-webkit-transform: perspective(1px) translateZ(0);

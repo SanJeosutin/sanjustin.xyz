@@ -6,8 +6,8 @@
 	<slot />
 </main>
 
-<div class="background fixed-bottom"></div>
 <footer class="fixed-bottom" align="center">
+	<div class="footer-position">
 		<p>
 			<strong>&blacktriangleleft;</strong>
 			<a class="fab fa-github" href="https://github.com/SanJeosutin?tab=repositories">{@html '&ThickSpace;'}<i> Github </i></a>  |
@@ -15,6 +15,7 @@
 			<a class="fas fa-envelope" href="mailto:contact.sanjustin@gmail.com">{@html '&ThickSpace;'}<i style="font-weight: normal;"> Contact Me </i></a>
 			<strong>&blacktriangleright;</strong>
 		</p>
+	</div>
 </footer>
 
 <style>
@@ -34,7 +35,7 @@
 	}
 
 	footer a{
-		color: #2e2e2e;
+		color: var(--font-primary-color);
 		display: inline-block;
   		vertical-align: middle;
   		-webkit-transform: perspective(1px) translateZ(0);
@@ -51,9 +52,8 @@
 		text-decoration: none;
 		-webkit-transform: scale(1.1);
   		transform: scale(1.1);
-		color: #0088ff;
+		color:var(--font-link-color);
 	}
-
 
 	@media (min-width: 480px) {
 		footer {
